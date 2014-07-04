@@ -1,11 +1,11 @@
 public class Solution {
 	public void hanoi(int n, char src, char bri, char dst){
 		if(n == 1){
-			System.out.println("Move Disk" + n + "from" + src + "to" + "dist");
+			System.out.println("Move Disk " + n + " from " + src + " to " + dst);
 		}
 		else{
-			hanoi(n-1, src, bri, dst);
-			System.out.println("Move Disk" + n + "from" + src + "to" + "dist");
+			hanoi(n-1, src, dst, bri);
+			System.out.println("Move Disk " + n + " from " + src + " to " + dst);
 			hanoi(n-1, bri, src, dst);
 		}
 	}
