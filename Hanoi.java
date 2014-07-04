@@ -1,4 +1,4 @@
-public class Solution {
+public class Hanoi {
 	public void hanoi(int n, char src, char bri, char dst){
 		if(n == 1){
 			System.out.println("Move Disk " + n + " from " + src + " to " + dst);
