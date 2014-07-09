@@ -1,18 +1,17 @@
 public class circus {
 	public int lis(ArrayList<person> person,int n){
-		int k = 1;
+		int len = 1;
 		int[] dp = new int[100];
-		dp[0] = person.get(0).weight;
-		for(int i = 1; i < n; i++){
-			if(person.get(i).weight >= dp[k-1]) {
-				dp[k++] = person.get(i).weight;
-			}else{
-				for(int j = k - 1; j >= 0 && dp[j] > person.get(i).weight; j--){
-					dp[j+1] = person.get(i).weight;
+		for(int i = 0; i < n; i++){
+			dp[i] = 1;
+				for(int j = 0; j < i; j++){
+					if(person.get(j).weight <= person.get(i).weight && dp[j] + 1 > dp[i]){
+						dp[i] = dp[j] + 1;
+					}
+					if(dp[i] > len) len = dp[i];
 				}
-			}
 		}
-		return k;
+		return len;
 	}
 	
     public static void main(String[] args) {
