@@ -42,3 +42,9 @@ public class getLongestWordMade {
     	s.getLongestWord(ar);
 	}
 }
+class lengthComparator implements Comparator<String> {
+	public int compare(String s1, String s2) {
+		// TODO Auto-generated method stub
+		return s2.length() - s1.length();
+	}
+}
