@@ -11,7 +11,7 @@ public class Hanoi {
 	}
     public static void main(String[] args) {
     	
-    	Solution s1 = new Solution();
+    	Hanoi s1 = new Hanoi();
     	s1.hanoi(3, 'A', 'B', 'C');
 	}
 }
