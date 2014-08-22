@@ -16,7 +16,7 @@ public class HanoiWithStack {
 	}
     public static void main(String[] args) {
     	
-    	HanoiWithStack s1 = new Solution();
+    	HanoiWithStack s1 = new HanoiWithStack();
     	s1.hanoi(3, 'A', 'B', 'C');
 	}
 }
