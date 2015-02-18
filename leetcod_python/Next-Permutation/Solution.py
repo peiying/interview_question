@@ -1,3 +1,6 @@
+# step 1: find largest index of value which is less than next one
+# step 2: find largest index of value which is larger than step 1 value
+# manually reverse
 class Solution:
     # @param num, a list of integer
     # @return a list of integer
