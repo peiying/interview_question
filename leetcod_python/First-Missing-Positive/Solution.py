@@ -1,3 +1,4 @@
+#注意 置换部分不能用 a,b = b,a 会引起死循环
 class Solution:
     # @param A, a list of integers
     # @return an integer
